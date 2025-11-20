@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pakistan Online Recharge</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <img src="images/logo.png" alt="logo" class="logo"/>
+    <h1>Pakistan Online Recharge</h1>
+    <p class="tag">Jazz · Zong · Ufone · Telenor — Fast & Secure Top-ups</p>
+  </header>
+
+  <main class="container">
+    <section id="contact" class="card">
+      <h2>Contact / Order</h2>
+      <p>WhatsApp: <a id="whatsapp-link" href="#">+966541462412</a></p>
+      <form id="orderForm">
+        <label>Network
+          <select id="network">
+            <option value="jazz">Jazz</option>
+            <option value="telenor">Telenor</option>
+            <option value="zong">Zong</option>
+            <option value="ufone">Ufone</option>
+          </select>
+        </label>
+
+        <label>Package
+          <select id="package">
+            <!-- options populated by script.js -->
+          </select>
+        </label>
+
+        <label>Mobile Number
+          <input id="msisdn" placeholder="03XXXXXXXXX" required />
+        </label>
+
+        <label>Your Country (for payment instructions)
+          <input id="country" placeholder="Saudi Arabia / Pakistan" />
+        </label>
+
+        <div class="pay-methods">
+          <p>Payment methods available:</p>
+          <ul>
+            <li>Visa</li>
+            <li>STC Pay</li>
+            <li>Sadad</li>
+            <li>Bank Transfer</li>
+            <li>Binance / USDT</li>
+            <li>Skrill</li>
+          </ul>
+        </div>
+
+        <button type="submit">Create Order / WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="packages" class="card">
+      <h2>Popular Packages</h2>
+      <div id="packageList" class="grid"></div>
+    </section>
+
+    <section id="proofs" class="card">
+      <h2>Recharge Proofs</h2>
+      <div class="gallery">
+        <img src="assets/proofs/proof1.jpg" alt="proof 1"/>
+        <img src="assets/proofs/proof2.jpg" alt="proof 2"/>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Pakistan Online Recharge — Contact: <a id="whatsapp-footer" href="#">+966541462412</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
